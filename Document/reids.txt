@@ -1,0 +1,17 @@
+spring:
+  redis:
+    cluster:
+      nodes: 120.24.89.4:10001,120.24.89.4:10002,120.24.89.4:10003,120.24.89.4:10004,120.24.89.4:10005,120.24.89.4:10006
+      max-redirects: 5
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 2
+    timeout: 12000
+#    port: 6379
+
+
+logging:
+  level:
+    root: warn
